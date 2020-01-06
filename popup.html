@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: flex;
+        font-size: 14px;
+      }
+      #buttons {
+      display:inline-block;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <div id="urlDisplay"></div>
+    <p>Domain List:</p>
+    <div id="divTableDomain">
+      <table id="tableDomain">
+
+      </table>
+    </div>
+    <div id="totalDomains"> 
+      <p id="total">
+      </p>
+    </div>
+    <div id="buttons">
+      <button id="refresh">Refresh</button>
+      <button id="clear">Clear Storage</button>
+    </div>
+
+    <div>
+      <br>
+      <select id="agents">
+        <option value="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36">Chrome</option>
+        <option value="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0">Firefox</option>
+        <option value="Mozilla/5.0 (Linux; U; Android 4.0.2; en-us; Galaxy Nexus Build/ICL53F) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30">Android</option>
+        <option value="Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B137 Safari/601.1">IPhone</option>
+      </select>
+      <br><br>
+      <div id="userButtons">
+        <button id="changeString">Change String</button>
+        <button id="clearString"> Clear UserString</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+
+  </body>
+</html>
